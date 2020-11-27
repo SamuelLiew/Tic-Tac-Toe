@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    text-align: center;
+}
+.body{
+    min-height: 100vh;
+    display: flex; 
+}
+.content{
+    margin:-175px 0px 0px -155px;
+    display: block;
+    height: 350px;
+    width: 310px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    
+
+}
+
+/* The Tic Tac Toe game area */
+.id1,.id2,.id3,.id4,.id5,.id6,.id7,.id8,.id9{
+    padding: 0%;
+    border: 0;
+    outline: none;
+}
+
+
+.gamecontainer{
+    display: block;
+    height: 300px;
+    width: 302px;
+}
+.game{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section{
+    display: block;
+    height: 100px;
+    width: 100px;
+    
+}
+#section4, #section5, #section6{
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+}
+#section2, #section5, #section8{
+    border-left: black 1px solid;
+    border-right: black 1px solid;
+}
+
+
+
+/* The Tic Tac Toe Data Area */
+.datacontainer{
+    display: block;
+    height: 50px;
+    width: 302px;
+}
+.scores{
+    display: flex;
+    height: 48px;
+}
+.player1, .player2{
+    flex-grow: 2;
+    font-size: 40px;
+}
+.player1{
+    color: red;
+}
+.player2{
+    color: aqua;
+}
+.reset{
+    font-size: 20px;
+    margin-top: 50%;
+    border: 0;
+    padding: 0;
+    outline: none;
+    background-color: white;
+}
+
+/* The Xs and Os in the Tic Tac Toe game*/
+
+.circle{
+    /* border: rebeccapurple 1px solid; */
+    width: auto; /* Can be in percentage also. */
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+.circlebox{
+    border: aqua 1px solid;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    margin: 10px;
+}
+/* Creation of the X */
+.x{
+    height: auto;
+    width: auto;
+    padding: 15px;
+}
+.xbox{
+    display: flex;
+    flex-wrap: wrap;
+    height: 68px;
+    width: 68px;
+    transform: rotate(45deg);
+    margin: auto;
+}
+
+/* Ok so, basically, because of my stupidity at the time, this is the best i can do. */
+/* box1 and box4 must have 1 px less than box2 and box 3 and x must equal to the */
+/* total height of the boxes(for the height of x) and total width of the boxes */
+.box1,.box2,.box3,.box4{
+    width: 34px;
+    height: 34px;
+    display: block;
+}
+
+.box1{
+    width: 33px;
+    height: 33px;
+    border-bottom: red 1px solid;
+    border-right: red 1px solid;
+}
+.box4{
+    width: 33px;
+    height: 33px;
+    border-top: solid red 1px;
+    border-left: solid red 1px;
+}
