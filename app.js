@@ -91,10 +91,18 @@ class Model {
       .toString()
       .split(" ")
       .includes(",true,true,true,");
+    const crossPoint2 = crossSimiliar
+      .toString()
+      .split(" ")
+      .includes("true,true,true,");
     const circlePoint = circleSimiliar
       .toString()
       .split(" ")
       .includes(",true,true,true,");
+    const circlePoint2 = circleSimiliar
+      .toString()
+      .split(" ")
+      .includes("true,true,true,");
     var point;
     if (crossPoint) {
       point = "player1";
