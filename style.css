@@ -135,3 +135,28 @@
     border-top: solid red 1px;
     border-left: solid red 1px;
 }
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: rgb(36, 35, 35);
+    }
+
+    .section{
+        background-color: rgb(36, 35, 35);
+    }
+    #section4, #section5, #section6{
+        border-top: white 1px solid;
+        border-bottom: white 1px solid;
+    }
+    #section2, #section5, #section8{
+        border-left: white 1px solid;
+        border-right: white  1px solid;
+    }
+    .reset{
+        background-color: rgb(36, 35, 35);
+        color: white;
+    }
+    .reset:hover{
+        color: rgb(185, 136, 235);
+    }
+  }
