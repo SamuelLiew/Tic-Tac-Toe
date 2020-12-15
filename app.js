@@ -104,9 +104,9 @@ class Model {
       .split(" ")
       .includes("true,true,true,");
     var point;
-    if (crossPoint) {
+    if (crossPoint || crossPoint2) {
       point = "player1";
-    } else if (circlePoint) {
+    } else if (circlePoint || circlePoint2) {
       point = "player2";
     } else {
       point = "nobody";
